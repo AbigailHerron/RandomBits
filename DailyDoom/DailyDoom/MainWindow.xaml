@@ -14,8 +14,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DailyDoom"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+        Title="DailyDoom!" Height="450" Width="800" WindowStartupLocation="CenterScreen">
     <Grid>
+        <!-- Defining Column and Row Items -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20*"/>
+            <ColumnDefinition Width="60*"/>
+            <ColumnDefinition Width="20*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="10*"/>
+        </Grid.RowDefinitions>
+        
+        <!-- Column 1, Row 1 Items -->
+        <TextBlock x:Name="tblkDoomTitle" Text="Today's Doom Is Brought About By:" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10,5,10,0" Grid.Column="1" FontSize="20px" Grid.Row="1"/>
+        <TextBlock x:Name="tblkDoomText" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10,40,10,10" Height="Auto" MaxWidth="430px" FontSize="18px" Grid.Column="1" Grid.Row="1"/>
 
+        <!-- Column 1, Row 2 Items -->
+        <TextBlock x:Name="tblkLuckyTitle" Text="ThIs A Lucky Placeholder:" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10,5,10,0" Width="Auto"  Grid.Column="1" FontSize="20px" Grid.Row="2"/>
+        <TextBlock x:Name="tblkLuckyText" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10,40,10,10" Height="Auto" MaxWidth="430px" FontSize="18px" Grid.Column="1" Grid.Row="2"/>
     </Grid>
 </Window>
